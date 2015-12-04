@@ -3,7 +3,14 @@
 
 # Except relevant config files/directories
 !.gitignore
+
+# The config directory needs special attention
+!.config/
+.config/*
+!.config/i3
+.config/i3/*
 !.config/i3/config
+
 !.vim
 !.vimrc
 !.Xresources
