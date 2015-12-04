@@ -1,0 +1,12 @@
+# Ignore everything
+*
+
+# Except relevant config files/directories
+!.gitignore
+!.config/i3/config
+!.vim
+!.vimrc
+!.Xresources
+!.i3blocks.conf
+!.xinitrc
+!wallpaper.jpg
