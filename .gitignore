@@ -13,7 +13,8 @@
 .config/i3/*
 !.config/i3/config
 
-!.vim
+!.vim/colors
+!.vim/colors/base16-default.vim
 !.vimrc
 !.Xresources
 !.i3blocks.conf

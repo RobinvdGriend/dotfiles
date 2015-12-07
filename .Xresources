@@ -2,8 +2,9 @@
 URxvt.scrollBar: false
 URxvt.font:	  xft:Fira Mono:pixelsize=16:altialias=false:hintin=true
 URxvt.boldFont:   xft:Fira Mono:bold:pixelsize=16:antialias=false:hinting=true
-URxvt.borderless: 1
+URxvt.borderless: true
 URxvt.letterSpace: -1
+URxvy.loginShell: true
 
 ! URxvt Keybord Shortcuts
 URxvt.perl-ext-common: default,clipboard
