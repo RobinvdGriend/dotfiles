@@ -205,3 +205,6 @@ gaps outer 5
 # Set wallpaper and flux
 exec feh --bg-scale ~/wallpaper.jpg
 exec xflux -l 51.664356 -g 4.532883 -k 2900
+
+# start chrome
+exec google-chrome
