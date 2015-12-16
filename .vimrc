@@ -1,12 +1,4 @@
-" A minimal vimrc for new vim users to start with.
-"
-" Referenced here: http://vimuniversity.com/samples/your-first-vimrc-should-be-nearly-empty
-"
 " Original Author:	     Bram Moolenaar <Bram@vim.org>
-" Made more minimal by:  Ben Orenstein
-" Modified by :          Ben McCormick
-" Last change:	         2014 June 8
-"
 " To use it, copy it to
 "  for Unix based systems (including OSX and Linux):  ~/.vimrc
 "  for Windows :  $VIM\_vimrc
@@ -17,18 +9,36 @@
 " This must be first, because it changes other options as a side effect.
 set nocompatible
 
-" Set base16 color scheme
-set background=dark
-colorscheme base16-default
+" Required by Vundle
+filetype off
 
-" Make backspace behave in a sane manner.
-set backspace=indent,eol,start
+" Set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+" Add plugins managed by Vundle in this block
+
+Plugin 'VundleVim/Vundle.vim'
+Plugin 'ctrlpvim/ctrlp.vim'
+Plugin 'chriskempson/base16-vim'
+Plugin 'bling/vim-airline'
+
+
+" End of block
+call vundle#end()
+
+" Don't let swap files interfere with git
+set nobackup
+set directory=~/.vim/swap//
+
+" Enable file type detection and do language-dependent indenting.
+filetype plugin indent on
 
 " Switch syntax highlighting on
 syntax on
 
-" Enable file type detection and do language-dependent indenting.
-filetype plugin indent on
+" Make backspace behave in a sane manner.
+set backspace=indent,eol,start
+
 
 " Show line numbers
 set number
@@ -36,3 +46,18 @@ set number
 " Allow hidden buffers, don't limit to 1 file per window/split
 set hidden
 
+" Set colorscheme
+set background=dark
+colorscheme base16-eighties
+
+" Set the path to the working directory for :find
+set path=$PWD/**
+
+" Set soft tabs
+set expandtab
+set shiftwidth=2
+set softtabstop=2
+
+" Always turn on vim-airline
+set laststatus=2
+let g:airline_powerline_fonts = 1
