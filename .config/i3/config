@@ -93,11 +93,11 @@ bindsym $mod+a focus parent
 #bindsym $mod+d focus child
 
 # assign workspace names
-set $workspace1 code
-set $workspace2 web
-set $workspace3 irc 
+set $workspace1 term 
+set $workspace2 code
+set $workspace3 web 
 set $workspace4 mail
-set $workspace5 etc
+set $workspace5 etc 
 set $workspace6 etc
 set $workspace7 etc
 set $workspace8 etc
@@ -105,7 +105,7 @@ set $workspace9 etc
 set $workspace10 music
 
 # assign windows to workspaces
-assign [class="google-chrome"] 2 $workspace2
+assign [class="google-chrome"] 3 $workspace3
 
 # switch to workspace
 bindsym $mod+1 workspace 1 $workspace1
@@ -194,17 +194,18 @@ client.focused_inactive $inactive-bg-color  $inactive-bg-color $inactive-text-co
 client.urgent           $urgent-bg-color    $urgent-bg-color   $text-color          $bg-color          
 
 # Hide indicator and edge bar
-hide_edge_borders vertical 
+hide_edge_borders both 
 binding_mode_indicator no
 
 # Set border and gaps
 new_window pixel 3
+smart_gaps on
 gaps inner 10
 gaps outer 5
 
 # Set wallpaper and flux
-exec feh --bg-scale ~/wallpaper.jpg
+exec feh --bg-scale ~/wallpaper.png
 exec xflux -l 51.664356 -g 4.532883 -k 2900
 
 # start chrome
-exec google-chrome
+exec google-chrome-stable

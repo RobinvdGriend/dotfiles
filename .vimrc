@@ -61,3 +61,7 @@ set softtabstop=2
 " Always turn on vim-airline
 set laststatus=2
 let g:airline_powerline_fonts = 1
+
+" Map jk and kj to exit insert mode
+imap jk <Esc> 
+imap kj <Esc>
