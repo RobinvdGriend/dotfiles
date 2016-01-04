@@ -20,6 +20,7 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'chriskempson/base16-vim'
+Plugin 'morhetz/gruvbox'
 Plugin 'bling/vim-airline'
 
 
@@ -48,7 +49,7 @@ set hidden
 
 " Set colorscheme
 set background=dark
-colorscheme base16-eighties
+colorscheme gruvbox
 
 " Set the path to the working directory for :find
 set path=$PWD/**
