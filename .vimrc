@@ -22,7 +22,7 @@ Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'chriskempson/base16-vim'
 Plugin 'morhetz/gruvbox'
 Plugin 'bling/vim-airline'
-
+Plugin 'edkolev/tmuxline.vim'
 
 " End of block
 call vundle#end()
