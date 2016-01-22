@@ -23,6 +23,10 @@ Plugin 'chriskempson/base16-vim'
 Plugin 'morhetz/gruvbox'
 Plugin 'bling/vim-airline'
 Plugin 'edkolev/tmuxline.vim'
+Plugin 'chrisbra/Colorizer'
+Plugin 'tpope/vim-rails'
+Plugin 'tpope/vim-surround'
+Plugin 'Valloric/YouCompleteMe'
 
 " End of block
 call vundle#end()
