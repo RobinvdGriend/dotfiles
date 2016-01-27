@@ -6,6 +6,7 @@
 [[ $- != *i* ]] && return
 
 alias ls='ls --color=auto'
+alias vpn='sudo openvpn /etc/openvpn/mullvad.conf'
 alias usvpn='sudo openvpn /etc/openvpn/mullvad_us.conf'
 PS1='[\u@\h \W]\$ '
 
