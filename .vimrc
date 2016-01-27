@@ -26,7 +26,8 @@ Plugin 'edkolev/tmuxline.vim'
 Plugin 'chrisbra/Colorizer'
 Plugin 'tpope/vim-rails'
 Plugin 'tpope/vim-surround'
-Plugin 'Valloric/YouCompleteMe'
+Plugin 'tpope/vim-bundler'
+Plugin 'airblade/vim-gitgutter'
 
 " End of block
 call vundle#end()
