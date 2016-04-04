@@ -104,9 +104,6 @@ set $workspace8 8
 set $workspace9 9
 set $workspace10 10
 
-# assign windows to workspaces
-assign [class="google-chrome"] $workspace3
-
 # switch to workspace
 bindsym $mod+1 workspace $workspace1
 bindsym $mod+2 workspace $workspace2
