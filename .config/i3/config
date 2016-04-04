@@ -93,16 +93,16 @@ bindsym $mod+a focus parent
 #bindsym $mod+d focus child
 
 # assign workspace names
-set $workspace1 1:term 
-set $workspace2 2:code
-set $workspace3 3:web 
-set $workspace4 4:mail
-set $workspace5 5:etc 
-set $workspace6 6:etc
-set $workspace7 7:etc
-set $workspace8 8:etc
-set $workspace9 9:etc
-set $workspace10 10:music
+set $workspace1 1
+set $workspace2 2
+set $workspace3 3
+set $workspace4 4
+set $workspace5 5
+set $workspace6 6
+set $workspace7 7
+set $workspace8 8
+set $workspace9 9
+set $workspace10 10
 
 # assign windows to workspaces
 assign [class="google-chrome"] $workspace3
@@ -166,7 +166,7 @@ bindsym $mod+r mode "resize"
 
 set $bg-color 	         #689d6a
 set $inactive-bg-color   #282828
-set $text-color          #ebdbb2 
+set $text-color          #ebdbb2
 set $inactive-text-color #ebdbb2 
 set $urgent-bg-color     #d65d0e
 
@@ -200,10 +200,9 @@ binding_mode_indicator no
 
 # Set border and gaps
 new_window pixel 3
-smart_gaps on
-gaps inner 10
-gaps outer 5
+gaps inner 5
+gaps outer 3
 
 # Set wallpaper and flux
-exec feh --bg-scale ~/wallpaper.png
+exec feh --bg-scale ~/images/wallpapers/forest.jpg
 exec xflux -l 51.664356 -g 4.532883 -k 3100
