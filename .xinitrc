@@ -10,4 +10,4 @@ fi
 # Set the qtstyle to be configured by qt5ct
 [ "$XDG_CURRENT_DESKTOP" = "KDE" ] || [ "$XDG_CURRENT_DESKTOP" = "GNOME" ] || export QT_QPA_PLATFORMTHEME="qt5ct"
 
-exec startxfce4
+exec i3
