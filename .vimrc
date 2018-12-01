@@ -12,3 +12,5 @@ filetype plugin indent on
 set tabstop=4
 set shiftwidth=4
 set expandtab
+
+:nnoremap <Leader>s :%s/\<<C-r><C-w>\>/
