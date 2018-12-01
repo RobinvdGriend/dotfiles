@@ -27,15 +27,5 @@ set wildmenu
 set linebreak
 set number
 set expandtab
-set shiftwidth=2
-set softtabstop=2
 
-" Ultisnips settings
-let g:UltiSnipsExpandTrigger="<C-e>"
-let g:UltiSnipsJumpForwardTrigger="<C-j>"
-let g:UltiSnipsJumpBackwardTrigger="<C-k>"
-
-" Start clientserver, needed for vimtex
-if empty(v:servername) && exists('*remote_startserver')
-  call remote_startserver('VIM')
-endif
+:nnoremap <Leader>s :%s/\<<C-r><C-w>\>/
