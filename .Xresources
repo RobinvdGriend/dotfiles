@@ -1,6 +1,4 @@
 ! Base16 Brewer
-! Scheme: Timothée Poisot (http://github.com/tpoisot)
-
 #define base00 #0c0d0e
 #define base01 #2e2f30
 #define base02 #515253
@@ -17,6 +15,8 @@
 #define base0D #3182bd
 #define base0E #756bb1
 #define base0F #b15928
+
+*font:         xft:fira mono:size=11
 
 *foreground:   base05
 #ifdef background_opacity
@@ -44,11 +44,16 @@
 *color14:      base0C
 *color15:      base07
 
-! Note: colors beyond 15 might not be loaded (e.g., xterm, urxvt),
-! use 'shell' template to set these if necessary
 *color16:      base09
 *color17:      base0F
 *color18:      base01
 *color19:      base02
 *color20:      base04
 *color21:      base06
+
+!Urxvt settings
+URxvt.scrollBar: false
+URxvt.iso14755:  false
+
+URxvt.keysym.Shift-Control-V: eval:paste_clipboard
+URxvt.keysym.Shift-Control-C: eval:selection_to_clipboard
